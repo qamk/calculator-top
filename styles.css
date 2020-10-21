@@ -1,0 +1,106 @@
+/* body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #70421470;
+} 
+*/
+body {
+    width: 95vw;
+    height: 95vh;
+    margin: auto;
+    background-color: #70421470;
+    text-align: center;
+}
+#wrapper {
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#shortcut {
+}
+.container {
+    border: 1px solid #d4d4d4;
+    background-color: #e0e0e0;
+    box-shadow: -1px 1px 2px #525252;
+    border-radius: 7px;
+    width: 400px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 3px 3px;
+    padding: 5px 9px;
+    grid-template-areas: "display display display display"
+                        "gap gap ac c"
+                        ". . . divide"
+                        ". . . multiply"
+                        ". . . subtr"
+                        ". . equals plus";
+
+}
+.display {
+    grid-area: display;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 83%;
+    width: 97%;
+    margin-left: 5px;
+    background-color: #807f4a;
+    border-radius: 2px;
+    border: 2.8px inset #807f4a;
+    opacity: 70%;
+    text-align: right;
+}
+.display > p {
+    position: relative;
+    bottom: -17px;
+    right: 5px;
+    height: auto;
+    width: 100%;
+    word-wrap: break-word;
+    font-weight: 900;
+    font-size: 1.3em;
+
+}
+.space {
+    grid-area: gap;
+}
+#divide {
+    grid-area: divide;
+}
+#add {
+    grid-area: plus;
+}
+#sub {
+    grid-area: subtr;
+}
+#multiply {
+    grid-area: multiply;
+}
+.display {
+    height: 100px;
+}
+.container > button {
+    background-color: #1f1f1f;
+    border: 2.5px outset #3a3a3a;
+    border-radius: 2.5px;
+    box-shadow: .8px .8px 1.2px #414141;
+    color: #ffffff;
+    transition: all .4s ease;
+    width: 7.6em;
+    height: 5em;
+}
+button:hover {
+    transform: scale(1.05);
+}
+
+@media (max-height: )
