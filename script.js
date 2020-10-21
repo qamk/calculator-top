@@ -27,6 +27,8 @@ function operate(operator,a,b) {
     "+":add,
     "-":subtract                        
 };
+console.log(`b.... s${b}s`);
+if (b=="") return "error";
 a = +a;
 b = +b;
 return functionObj[operator](a,b);
@@ -61,7 +63,7 @@ function processExpression() {
             if (OPERATORS.indexOf(array[1]!=-1)) {
                let operator= array.splice(1,1);
                array.unshift(operator);
-               console.log("has been shifted.....")
+               console.log("has been shifted.....");
                return array;
             }
             else {
